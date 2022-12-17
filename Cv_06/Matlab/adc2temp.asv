@@ -1,0 +1,8 @@
+
+tab=csvread("ntc.csv");
+temp=tab(:,1);
+R_NTC=tab(:,2);
+ADC_bit_word_size=10;
+ADC_range=2^ADC_bit_word_size;
+
+ADC_Val=ADC_range*(R_NTC./(R_NTC))
